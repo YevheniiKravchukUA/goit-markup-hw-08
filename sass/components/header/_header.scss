@@ -1,0 +1,104 @@
+.header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: block;
+  @include secondary-font(26px, calc(31 / 26), 0.03em);
+}
+
+.logo__item {
+  color: getColor(active);
+}
+
+.header__logo {
+  margin-right: 91px;
+}
+
+.nav {
+  @extend %flex-centered;
+}
+
+.nav__list {
+  @extend %flex-centered;
+}
+
+.nav__item {
+  position: relative;
+  @include main-font(500, 14px, calc(16 / 14), 0.02em);
+
+  color: getColor(secondary);
+
+  &:not(:last-child) {
+    margin-right: 52px;
+  }
+}
+
+.nav__link {
+  display: block;
+
+  min-height: 80px;
+  padding-top: 32px;
+
+  transition: color $main-transition;
+  &:hover,
+  &:focus {
+    color: getColor(active);
+  }
+}
+
+.address__list {
+  @extend %flex-centered;
+}
+
+.address__item {
+  @include main-font(500, 14px, calc(16 / 14), 0.02em);
+
+  color: getColor(primary-light);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.address__link {
+  @extend %flex-centered;
+
+  min-height: 80px;
+
+  transition: color $main-transition, fill $main-transition;
+  fill: getColor(primary-light);
+  &:hover,
+  &:focus {
+    color: getColor(active);
+    fill: getColor(active);
+  }
+}
+
+.address__svg {
+  margin-right: 10px;
+}
+
+.current {
+  color: getColor(active);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 4px;
+
+    background: getColor(active);
+    border-radius: 2px;
+  }
+}

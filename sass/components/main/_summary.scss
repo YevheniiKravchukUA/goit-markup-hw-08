@@ -1,0 +1,35 @@
+.section.summary {
+  padding-bottom: 0px;
+}
+
+.summary__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary__item {
+  width: 270px;
+}
+
+.summary__svg-wrapper {
+  @extend %flex-centered;
+
+  width: 100%;
+  height: 120px;
+
+  background-color: rgba(245, 244, 250, 1);
+
+  margin-bottom: 30px;
+}
+
+.summary__item-title {
+  @include main-font(700, 14px, calc(16 / 14), 0.03em, normal, uppercase);
+
+  margin-bottom: 10px;
+}
+
+.summary__item-text {
+  @include main-font(400, 14px, calc(24 / 14), 0.03em);
+
+  color: getColor(primary-light);
+}

@@ -1,0 +1,35 @@
+.portfolio__buttons-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 575px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.portfolio__button {
+  @include main-font(500, 16px, calc(26 / 16), 0.03em);
+
+  width: auto;
+  height: auto;
+
+  background-color: rgba(245, 244, 250, 1);
+  color: getColor(secondary);
+
+  padding: 6px 22px;
+
+  transition: color $main-transition, background-color $main-transition,
+    box-shadow $main-transition;
+
+  &:hover,
+  &:focus {
+    background-color: getColor(active);
+    color: getColor(full-white);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

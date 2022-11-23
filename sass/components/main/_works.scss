@@ -1,0 +1,23 @@
+.works__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.works__item {
+  position: relative;
+}
+
+.works__img-wrapper {
+  @extend %flex-centered;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  @include main-font(700, 14px, calc(16 / 14), 0.03em, normal, uppercase);
+
+  width: 370px;
+  min-height: 70px;
+
+  color: getColor(full-white);
+  background-color: rgba(47, 48, 58, 0.8);
+}

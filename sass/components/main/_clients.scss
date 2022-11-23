@@ -1,0 +1,22 @@
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients__link {
+  @extend %flex-centered;
+  width: 170px;
+  height: 92px;
+
+  @include bordered(getColor(primary), 4px);
+
+  fill: getColor(primary);
+
+  transition: $main-transition;
+
+  &:hover,
+  &:focus {
+    border-color: getColor(active);
+    fill: getColor(active);
+  }
+}

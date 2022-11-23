@@ -1,0 +1,8 @@
+.title {
+  @include main-font(700, 36px, calc(42 / 36), 0.03em);
+  text-align: center;
+
+  color: getColor(secondary);
+
+  margin-bottom: 50px;
+}
