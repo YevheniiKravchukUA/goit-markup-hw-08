@@ -39,3 +39,9 @@
   border: 1px solid $color;
   border-radius: $radius;
 }
+
+@mixin flex-centered() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
