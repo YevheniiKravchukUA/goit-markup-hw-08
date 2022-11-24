@@ -4,17 +4,33 @@
   max-width: 1600px;
   min-height: 400px;
 
+  @include flex-centered;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/backgrounds/hero_bck.jpg);
+    url(../images/backgrounds/m-hero-bckg.jpg);
+
   background-size: cover;
   background-repeat: no-repeat;
 
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/backgrounds/m-hero-bckg@2.jpg);
+  }
 }
 
 .hero__container {
@@ -33,8 +49,54 @@
   color: getColor(full-white);
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    @include flex-centered;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/backgrounds/t-hero-bckg.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/backgrounds/t-hero-bckg@2.jpg);
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
-    min-height: 600px;
+    @include flex-centered;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/backgrounds/d-hero-bckg.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/backgrounds/d-hero-bckg@2.jpg);
+    }
   }
 }

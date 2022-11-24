@@ -194,7 +194,11 @@
             <li class="works__item">
               <img
                 class="works__img"
-                src="./images/gallery-1.jpg"
+                srcset="
+                  ./images/desktop/works/d-works-img-1.jpg   1x,
+                  ./images/desktop/works/d-works-img-1@2.jpg 2x
+                "
+                src="./images/desktop/works/d-works-img-1.jpg"
                 alt="Разработчик пишет код"
                 width="370"
               />
@@ -205,7 +209,11 @@
             <li class="works__item">
               <img
                 class="works__img"
-                src="./images/gallery-2.jpg"
+                srcset="
+                  ./images/desktop/works/d-works-img-2.jpg   1x,
+                  ./images/desktop/works/d-works-img-2@2.jpg 2x
+                "
+                src="./images/desktop/works/d-works-img-2.jpg"
                 alt="Дизайнер проверяет макет"
                 width="370"
               />
@@ -216,7 +224,11 @@
             <li class="works__item">
               <img
                 class="works__img"
-                src="./images/gallery-3.jpg"
+                srcset="
+                  ./images/desktop/works/d-works-img-3.jpg   1x,
+                  ./images/desktop/works/d-works-img-3@2.jpg 2x
+                "
+                src="./images/desktop/works/d-works-img-3.jpg"
                 alt="Дизайнер смотрит цветовую палитру"
                 width="370"
               />
@@ -233,12 +245,37 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/worker-1.jpg"
-                alt="Фотография сотрудника"
-                width="270"
-              />
+              <picture class="team__img">
+                <source
+                  srcset="
+                    ./images/mobile/m-team-img-1.jpg   1x,
+                    ./images/mobile/m-team-img-1@2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/t-team-img-1.jpg   1x,
+                    ./images/tablet/t-team-img-1@2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/team/d-team-img-1.jpg   1x,
+                    ./images/desktop/team/d-team-img-1@2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/mobile/m-team-img-1.jpg"
+                  alt="Фотография сотрудника"
+                />
+              </picture>
+
               <div class="team__item-footer">
                 <p class="team__name">Ігор Дем'яненко</p>
                 <p class="team__speciality">Product Designer</p>
@@ -297,12 +334,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/worker-2.jpg"
-                alt="Фотография сотрудника"
-                width="270"
-              />
+              <picture class="team__img">
+                <source
+                  srcset="
+                    ./images/mobile/m-team-img-2.jpg   1x,
+                    ./images/mobile/m-team-img-2@2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/t-team-img-2.jpg   1x,
+                    ./images/tablet/t-team-img-2@2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/team/d-team-img-2.jpg   1x,
+                    ./images/desktop/team/d-team-img-2@2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/mobile/m-team-img-2.jpg"
+                  alt="Фотография сотрудника"
+                />
+              </picture>
               <div class="team__item-footer">
                 <p class="team__name">Ольга Рєпіна</p>
                 <p class="team__speciality">Frontend Developer</p>
@@ -361,12 +422,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/worker-3.jpg"
-                alt="Фотография сотрудника"
-                width="270"
-              />
+              <picture class="team__img">
+                <source
+                  srcset="
+                    ./images/mobile/m-team-img-3.jpg   1x,
+                    ./images/mobile/m-team-img-3@2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/t-team-img-3.jpg   1x,
+                    ./images/tablet/t-team-img-3@2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/team/d-team-img-3.jpg   1x,
+                    ./images/desktop/team/d-team-img-3@2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/mobile/m-team-img-3.jpg"
+                  alt="Фотография сотрудника"
+                />
+              </picture>
               <div class="team__item-footer">
                 <p class="team__name">Микола Тарасов</p>
                 <p class="team__speciality">Marketing</p>
@@ -425,12 +510,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/worker-4.jpg"
-                alt="Фотография сотрудника"
-                width="270"
-              />
+              <picture class="team__img">
+                <source
+                  srcset="
+                    ./images/mobile/m-team-img-4.jpg   1x,
+                    ./images/mobile/m-team-img-4@2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/t-team-img-4.jpg   1x,
+                    ./images/tablet/t-team-img-4@2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/team/d-team-img-4.jpg   1x,
+                    ./images/desktop/team/d-team-img-4@2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/mobile/m-team-img-4.jpg"
+                  alt="Фотография сотрудника"
+                />
+              </picture>
               <div class="team__item-footer">
                 <p class="team__name">Михайло Єрмаков</p>
                 <p class="team__speciality">UI Designer</p>

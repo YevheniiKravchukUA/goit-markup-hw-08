@@ -86,7 +86,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+
   @include main-font(400, 12px, calc(14 / 12), 0.01em);
 
   width: 100%;
@@ -240,5 +240,11 @@
 @media screen and (max-width: 1199px) {
   .modal {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form__label {
+    align-items: flex-start;
   }
 }
