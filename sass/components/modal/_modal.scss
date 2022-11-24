@@ -86,8 +86,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
+  align-items: flex-start;
   @include main-font(400, 12px, calc(14 / 12), 0.01em);
+
+  width: 100%;
 
   color: getColor(primary-light);
 
@@ -103,7 +105,7 @@
 }
 
 .modal__input {
-  width: 448px;
+  width: 100%;
   height: 40px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -138,7 +140,7 @@
 }
 
 .modal__textarea {
-  width: 448px;
+  width: 100%;
   height: 120px;
 
   resize: none;
@@ -233,4 +235,10 @@
 .modal__submit-button:hover,
 .modal__submit-button:focus {
   background-color: #188ce8;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
 }
