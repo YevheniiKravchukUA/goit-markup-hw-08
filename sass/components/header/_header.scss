@@ -260,7 +260,7 @@
   }
 
   .address__item {
-    @include main-font(500, 12px, calc(14 / 12), 0.02em);
+    @include main-font(500, 14px, calc(16 / 14), 0.02em);
 
     &:first-child {
       margin-right: 30px;

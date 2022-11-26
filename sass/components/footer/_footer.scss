@@ -114,6 +114,11 @@
     width: 450px;
   }
 }
+@media screen and (max-width: 767px) {
+  .footer__form .form__input {
+    width: 100%;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .footer__tablet-wrapper {
@@ -134,6 +139,12 @@
 
   .footer__center {
     justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__form .form__label {
+    align-items: center;
   }
 }
 
