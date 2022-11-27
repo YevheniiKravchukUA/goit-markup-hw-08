@@ -234,7 +234,19 @@
   background-color: #188ce8;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 450px) {
+  .modal {
+    width: 95%;
+  }
+
+  .checkbox__label {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 5px;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 1199px) {
   .modal {
     width: 450px;
   }

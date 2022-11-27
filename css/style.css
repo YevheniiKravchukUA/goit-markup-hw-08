@@ -306,6 +306,11 @@ input::-webkit-inner-spin-button {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
+@media screen and (max-width: 450px) {
+  .header__address .address__item:last-child {
+    font-size: 24px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .address__list {
     display: flex;
@@ -379,8 +384,8 @@ input::-webkit-inner-spin-button {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1428571429;
+    font-size: 12px;
+    line-height: 1.1666666667;
     letter-spacing: 0.02em;
     text-transform: none;
     color: rgb(117, 117, 117);
@@ -563,6 +568,16 @@ input::-webkit-inner-spin-button {
     align-items: center;
     min-height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgrounds/d-hero-bckg.jpg);
+  }
+  .hero__title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636363636;
+    letter-spacing: 0.06em;
+    text-transform: none;
+    min-width: 696px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -940,13 +955,10 @@ input::-webkit-inner-spin-button {
   .footer__tablet-wrapper {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__tablet-wrapper {
-    display: flex;
-    justify-content: space-around;
     margin-bottom: 60px;
   }
   .footer__center {
@@ -1306,7 +1318,17 @@ input::-webkit-inner-spin-button {
   background-color: #188ce8;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 450px) {
+  .modal {
+    width: 95%;
+  }
+  .checkbox__label {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 5px;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 1199px) {
   .modal {
     width: 450px;
   }

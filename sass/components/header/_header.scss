@@ -136,6 +136,12 @@
   }
 }
 
+@media screen and (max-width: 450px) {
+  .header__address .address__item:last-child {
+    font-size: 24px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .address__list {
     display: flex;
@@ -212,7 +218,7 @@
   }
 
   .address__item {
-    @include main-font(500, 14px, calc(16 / 14), 0.02em);
+    @include main-font(500, 12px, calc(14 / 12), 0.02em);
 
     color: getColor(primary-light);
   }

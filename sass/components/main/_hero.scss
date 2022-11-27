@@ -89,6 +89,11 @@
       url(../images/backgrounds/d-hero-bckg.jpg);
   }
 
+  .hero__title {
+    @include main-font(900, 44px, calc(60 / 44), 0.06em);
+    min-width: 696px;
+  }
+
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
